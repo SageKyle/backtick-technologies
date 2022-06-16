@@ -1,0 +1,56 @@
+.stories {
+    width: 100%;
+    background-color: $primary;
+    text-align: center;
+    padding: $small-size;
+    margin: $tiny-size 0;
+    
+    &-group {
+        grid-template-columns: repeat(2, 1fr); 
+        text-align: left;
+    }
+    
+}
+
+.story {
+    display: grid;
+    grid-template-columns: calc(#{$extra-big-size} + #{$tiny-size}) auto;
+    height: calc(#{$extra-big-size} * 2 + #{$medium-size}); // 26rem;
+    padding-left: $tertiary;
+    border-radius: $small-border-radius;
+    background-color: $light-grey;
+    align-items: center;
+    justify-content: center;
+    padding-left: $tiny-size;
+
+    &-img {
+        text-align: center;
+        justify-self: baseline;
+
+        .img {
+            align-self: center;
+            width: 100%;
+            height: auto;
+            border-radius: $big-border-radius;
+        }
+
+        &-name {
+            color: $primary;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            margin-top: $tiny-size;
+        }
+    }
+
+
+    &-text {
+        width: 90%;
+        align-self: center;
+        justify-self: right;
+    }
+    
+    &-detail {
+        color: $black;
+
+    }
+}

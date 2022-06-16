@@ -1,0 +1,81 @@
+
+.benefits {
+    background-color: $light-grey;
+    padding: $medium-size 0;
+    text-align: center;
+
+    &-group {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__paragraph {
+        color: $secondary
+    }
+
+    .col-1-of-4 {
+        background-color: $white;
+    }
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+    padding: $medium-size;
+    padding-bottom: calc(#{$extra-big-size} * 2); // 20rem
+    background-image: linear-gradient(to right bottom, $white, $light-grey);
+
+    &-content {
+        width: 85%;
+        background-image: linear-gradient(105deg, 
+                                    rgba($primary, .9) 0%, 
+                                    rgba($primary, .9) 45%, 
+                                    transparent 45%),
+                                    url('/assets/white-stripe-bg.jpg');
+        background-size: cover;
+        margin: 0 auto;
+        border-radius: .5rem;
+        box-shadow: $box-shadow;
+        padding: $small-size;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+
+    }
+
+    &-main {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .sub-heading {
+            margin: 0;
+        }
+    }
+
+    &-logo {
+        width: calc(#{$extra-big-size} * 2 + #{$medium-size}); // 26rem;
+        aspect-ratio: 1/1;
+        margin-bottom: $tiny-size;
+        margin-left: $small-size;
+    }
+
+    &-details {
+        width: 50%;
+        text-align: center;
+        
+        .paragraph {
+            font-size: 1.5rem;
+            margin-bottom: $tiny-size;
+            text-align: left;
+            color: $black;
+        }
+    }
+
+}
