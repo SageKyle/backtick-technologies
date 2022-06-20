@@ -4,21 +4,21 @@
     padding: $medium-size 0;
     text-align: center;
 
-    &-group {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    &-group {grid-template-columns: repeat(4, 1fr);}
 
-    &__paragraph {
-        color: $secondary
-    }
+    &__paragraph {color: $secondary;}
 
-    .col-1-of-4 {
-        background-color: $white;
+    .col-1-of-4 {background-color: $white;}
+
+    .btn {
+        text-transform: none;
+        color: $black;
+        font-size: 2rem;
     }
 
 }
 
-.about {
+.about-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@
                                     rgba($primary, .9) 0%, 
                                     rgba($primary, .9) 45%, 
                                     transparent 45%),
-                                    url('/assets/white-stripe-bg.jpg');
+                                    url('/assets/img/white-stripe-bg.jpg');
         background-size: cover;
         margin: 0 auto;
         border-radius: .5rem;
@@ -44,7 +44,6 @@
         display: flex;
         justify-content: baseline;
         align-items: center;
-
     }
 
     &-main {
@@ -54,9 +53,7 @@
         justify-content: space-between;
         align-items: flex-start;
 
-        .sub-heading {
-            margin: 0;
-        }
+        .sub-heading {margin: 0;}
     }
 
     &-logo {

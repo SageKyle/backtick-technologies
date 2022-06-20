@@ -5,7 +5,6 @@
     font-weight: 600; 
     line-height: 1.5;
     margin-bottom: $small-size;
-    text-shadow: 2px 2px $dark-grey;
     font-family: 'Ubuntu', sans-serif;
     animation-name: moveInTop;
     animation-duration: 500ms;
@@ -21,6 +20,15 @@
     margin: 0 auto $small-size auto;
     text-align: center;
 
+}
+
+.page-heading {
+    text-align: center;
+    text-transform: capitalize;
+    // text-decoration: underline;
+    font-size: 4rem;
+    margin-top: $small-size;
+    margin-bottom: $medium-size;
 }
 
 .sub-heading {

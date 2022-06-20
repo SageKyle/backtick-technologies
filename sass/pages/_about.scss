@@ -1,0 +1,138 @@
+.about {
+    padding: $small-size;
+    background-color: $very-light-grey;
+    color: $black;
+
+    .primary-heading {font-size: 5rem;}
+    
+    .sub-heading {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+    }
+
+    &-content {
+        display: flex;
+    }
+
+    &-img {width: 50%;}
+
+    &-main {
+        display: flex;
+        flex-direction: column;
+        margin: $small-size;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    &-statement {
+        display: flex;
+        font-size: 1.6rem;
+        margin-top: auto;
+        align-self: flex-start;
+    }
+
+    &-mission {margin-left: $tiny-size;}
+}
+
+// CONTACT SECTION
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $medium-size;
+
+    &-container {
+        width: 60%;
+        margin: $small-size auto;
+        border-radius: .5rem;
+        box-shadow: $box-shadow;
+        padding: $tiny-size;
+        display: flex;
+        align-items: center;
+    }
+
+    &-email-box {width: 60%;}
+
+    &-address-box {padding-left: $small-size;}
+
+    &-address-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        text-transform: capitalize;
+    }
+
+    &-item {
+        display: flex;
+        justify-content: baseline;
+        margin-bottom: 1rem;
+    }
+
+    &-icon {
+        font-size: 1.5rem;
+        margin-right: $tiny-size;
+        color: rgba($primary, .6);
+    } 
+}
+
+.form {
+
+    &-input-area {
+        margin: $tiny-size auto;
+        border-right: 2px solid rgba($primary, .15);
+    }
+
+    &-heading {
+        color: $primary;
+        text-transform: uppercase;
+        font-size: 2rem;
+
+    }
+
+    &-title {text-transform: capitalize;}
+    
+    fieldset {
+        border: unset;
+        margin-bottom: 1rem;
+    }
+    
+    input,
+    textarea {
+        width: 60%;
+        outline: unset;
+        border: unset;
+        padding: .5rem;
+        background-color: rgba($black, .05);
+        border-radius: .25rem;
+        border-bottom: 2px solid rgba($black, .6);
+        
+        &:focus,
+        &:active {border-bottom-color: $primary;}
+    }
+
+    .submit-btn {
+        height: fit-content;
+        padding: .5rem 1rem;
+        font-size: 1.6rem;
+        color: $white;
+        margin: 1rem 0 0 $tiny-size;
+        background-color: rgba($primary, .9);
+        border: 2px solid $primary;
+
+        &:hover {
+            color: $black;
+            background-color: transparent;
+        }
+    }
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(#{$extra-big-size} * 4);
+    width: 80%;
+    margin: $tiny-size auto;
+    margin-bottom: $extra-big-size !important;
+}

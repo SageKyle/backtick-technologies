@@ -1,16 +1,11 @@
 .navigation {
-    height: 10%;
-    width: 100%;
     background-color: $black;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     font-size: 2rem;
     font-weight: 400;
-    text-transform: capitalize;
-    padding: 0 $tiny-size;
-    border-bottom: .5rem solid $primary;
     color: $white;
+    text-transform: capitalize;
+    height: 10%;
+    padding: 0 $tiny-size;
     
     &__item {
         padding: 0 calc(#{$tiny-size} / 2); // 1rem
@@ -20,12 +15,23 @@
             color: $tertiary;
         }
     }
+}
 
-    .display-block {
-        display: flex;
-        flex-direction: row;
-        padding: $tiny-size $small-size;
-        background-color: $black;
-        position: absolute;
-    }
+    
+.relative-position {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.position-fixed {
+    display: flex;
+    flex-direction: row;
+    padding: $tiny-size $small-size;
+    height: $medium-size;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
 }

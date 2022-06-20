@@ -1,0 +1,59 @@
+.services {
+    background-color: $light-grey;
+    width: 100%;
+    padding: $small-size;
+    text-align: center;
+    padding-bottom: $big-size;
+
+    &-header {
+        background-image: url('/assets/img/a-lady-using-a-smartphone-with-shades-on.jpg');
+        background-size: 100%;
+        background-position-y: 50%;
+    }
+
+    &-group {
+        margin-top: $small-size;
+        text-align: left;
+    }
+
+    .section-heading {
+        grid-column: span 2;
+        color: $primary;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin: $tiny-size 0 -#{$tiny-size} $small-size;
+
+        &:first-child {
+            margin-top: $small-size;
+            margin-bottom: -#{$small-size};
+        }
+    }
+
+    &-item {
+        grid-template-columns: repeat(2, 1fr);
+        gap: $small-size;
+        align-items: center;
+    }
+
+    &-text:nth-child(even) {margin-left: $small-size;}
+
+    &-text {
+        width: 80%;
+
+        .sub-heading {font-size: 1.8rem;}
+    }
+
+    &-img > img {
+        width: 100%;
+        height: calc(#{$extra-big-size} * 4);
+        border-radius: $tiny-size;
+    }
+
+    &-detail {
+        color: $black;
+        font-size: 2rem;
+    }
+
+    .btn {margin-bottom: $small-size;}
+    
+}

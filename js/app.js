@@ -1,22 +1,14 @@
 const navigation = document.querySelector('.navigation');
 const benefitsContainer = document.querySelector('.benefits')
 const benefitsCard = document.querySelectorAll('.benefits .col-1-of-4')
+const mainSection = document.querySelector('#main')
 
-// navigation.addEventListener('scroll', function(e) {
-//         // console.log(e);
-
-//         if(e.target.clientHeight <= 0) {
-//             navigation.style.position = 'fixed'
-//             navigation.style.top = '0'
-//             navigation.style.zIndex = '500'
-//             console.log('nav fixed')
-//         }
-
-// });
 
 // MOUSE EVENTS
 
 benefitsContainer.addEventListener('mouseenter', (e) => {
+    // navigation.classList.toggle('border-bottom');
+    // navigation.classList.toggle('position-fixed');
     benefitsCard.forEach(card => {
         card.classList.toggle('animate-left');
     });
@@ -29,3 +21,10 @@ benefitsContainer.addEventListener('pointerenter', (e) => {
 }, { once: true });
 
 }, { once: true });
+
+mainSection.addEventListener('mouseenter', (e) => {
+    navigation.classList.add('border-bottom');
+    navigation.classList.toggle('position-fixed');
+
+});
+

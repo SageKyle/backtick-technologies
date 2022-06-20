@@ -14,16 +14,16 @@
     cursor: pointer;
 }
 
+span.arrow {
+    display: inline-block;
+    transition: all 500ms;
+}
+
 .btn-secondary {
     color: $primary;
-    border-radius: unset;
-    padding: 0;
     background-color: transparent;
 
-    &:hover {
-        color: $primary;
-        border-bottom: 2px solid $primary;
-    }
+    &:hover span.arrow {transform: translateX(1rem);}
 }
 
 .btn-primary {
@@ -51,10 +51,7 @@
         background-color: $green;
     }
 
-    &:hover > .fa {
-        margin-left: calc(#{$tiny-size} / 2);
-
-    }
+    &:hover span.arrow {transform: translateX(1rem);}
 }
 
 // Grid
@@ -93,10 +90,12 @@
 }
 
 // Other utilities
+.border-bottom {border-bottom: .5rem solid $primary;}
+
 .skew-left {transform: skew(10deg);}
 .skew-right {transform: skew(-10deg);}
+
 .emphasis {
-    color: $tertiary;
     text-transform: capitalize;
     font-weight: 600;
 }
@@ -109,10 +108,12 @@
     animation-fill-mode: backwards
 }
 
-.animate-left {
-    animation-name: moveInLeft;
-}
+.animate-fast {animation-duration: 500ms;}
+.animate-left {animation-name: moveInLeft;}
+.animate-right {animation-name: moveInRight;}
+.animate-top {animation-name: moveInTop;}
+.animate-bottom {animation-name: moveInBottom;}
 
-.delay-1s {
-    animation-delay: 1s;
-}
+.delay-1s {animation-delay: 1s;}
+.delay-2s {animation-delay: 2s;}
+.delay-4s {animation-delay: 4s;}
