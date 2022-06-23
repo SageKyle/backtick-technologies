@@ -1,5 +1,5 @@
 .navigation {
-    background-color: rgba($black, .6);
+    background-color: rgba($black, .8);
     font-size: 2rem;
     font-weight: 400;
     color: $white;
@@ -36,6 +36,10 @@
 
 // MEDIA QUEIRES
 @media screen and (max-width: 45em) {
+
+    .header {
+        height: 60vh;
+    }
     
 .toggle {
     display: inline-block;
@@ -43,11 +47,11 @@
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    width: 3rem;
-    height: 4rem;
+    width: $medium-size;
+    height: $medium-size;
     position: absolute;
-    top: 6rem;
-    left: 6rem;
+    top: 4rem;
+    left: 4rem;
     cursor: pointer;
 }
 
@@ -65,10 +69,11 @@
     background-color: rgba($black, .5);
     z-index: 500;
 
-    &-link {
-        padding: 1.5rem;
+    &__item {
+        padding-bottom: $tiny-size;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     &__logo {display: none;}

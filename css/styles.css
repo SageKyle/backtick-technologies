@@ -529,7 +529,7 @@ span.arrow {
       margin: 2rem 0; } }
 
 .navigation {
-  background-color: rgba(19, 18, 18, 0.6);
+  background-color: rgba(19, 18, 18, 0.8);
   font-size: 2rem;
   font-weight: 400;
   color: #ffffff;
@@ -556,17 +556,19 @@ span.arrow {
     display: none; }
 
 @media screen and (max-width: 45em) {
+  .header {
+    height: 60vh; }
   .toggle {
     display: inline-block;
     background-image: url("/assets/img/icon-hamburger.png");
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    width: 3rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     position: absolute;
-    top: 6rem;
-    left: 6rem;
+    top: 4rem;
+    left: 4rem;
     cursor: pointer; }
   .navigation {
     position: fixed;
@@ -581,10 +583,11 @@ span.arrow {
     left: 0;
     background-color: rgba(19, 18, 18, 0.5);
     z-index: 500; }
-    .navigation-link {
-      padding: 1.5rem;
+    .navigation__item {
+      padding-bottom: 2rem;
       text-align: center;
-      font-size: 2rem; }
+      font-size: 2.5rem;
+      font-family: 'Ubuntu', sans-serif; }
     .navigation__logo {
       display: none; }
     .navigation .close {
