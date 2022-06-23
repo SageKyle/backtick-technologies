@@ -7,7 +7,7 @@
     padding: calc(#{$tiny-size} / 2) $tiny-size;
     border-radius: $small-size;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     border: unset;
     margin: $small-size;
     transition: all 300ms;
@@ -20,7 +20,7 @@ span.arrow {
 }
 
 .btn-secondary {
-    color: $primary;
+    color: currentColor;
     background-color: transparent;
 
     &:hover span.arrow {transform: translateX(1rem);}
@@ -28,6 +28,7 @@ span.arrow {
 
 .btn-primary {
     background-color: $white;
+    font-size: 3rem;
     color: $primary;
 
     &:hover {
@@ -69,7 +70,7 @@ span.arrow {
 }
 
 .col-1-of-4 {
-    padding: calc(#{$tiny-size} / 2);
+    padding: $tiny-size;
     border-radius: $tiny-size;
     box-shadow: 2px 2px 2px $light-grey;
 }
@@ -92,9 +93,6 @@ span.arrow {
 // Other utilities
 .border-bottom {border-bottom: .5rem solid $primary;}
 
-.skew-left {transform: skew(10deg);}
-.skew-right {transform: skew(-10deg);}
-
 .emphasis {
     text-transform: capitalize;
     font-weight: 600;
@@ -105,7 +103,7 @@ span.arrow {
 .animate {
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
-    animation-fill-mode: backwards
+    animation-fill-mode: backwards;
 }
 
 .animate-fast {animation-duration: 500ms;}
@@ -113,6 +111,7 @@ span.arrow {
 .animate-right {animation-name: moveInRight;}
 .animate-top {animation-name: moveInTop;}
 .animate-bottom {animation-name: moveInBottom;}
+.rotateLeft {animation-name: rotateLeft;}
 
 .delay-1s {animation-delay: 1s;}
 .delay-2s {animation-delay: 2s;}

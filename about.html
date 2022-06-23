@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- FAVICON -->
+    
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
@@ -20,10 +21,11 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,700;1,500&family=Raleway:ital,wght@0,300;0,400;0,600;1,700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,700;1,500&family=Montserrat:wght@500;600&family=Raleway:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    
     <header class="header about-header">
         <div class="container">
             <!-- HERO -->
@@ -37,17 +39,19 @@
                 <div class="hero__img"></div>
             </section>
         </div>
+        <!-- NAV TOGGLE -->
+        <div class="toggle"></div>
         <!-- NAVIGATION -->
-        <nav class="navigation display-block">
+        <nav class="navigation hidden animate animate-fast animate-left">
+            <div class="close animate delay-1s rotateLeft animate-fast">x</div>
+            <img src="/assets/img/backtick-logo.svg" alt="" class="navigation__logo">
             <a href="/index.html" class="navigation__item">home</a>
-            <a href="/products.html" class="navigation__item">products</a>
             <a href="/services.html" class="navigation__item">services</a>
             <a href="/about.html" class="navigation__item">about</a>
         </nav>
     </header>
+
     <main id="main">
-        <!-- NAV TOGGLE -->
-        <div class="toggle"></div>
 
         <section class="about">
             <h2 class="page-heading">about us</h2>
@@ -56,7 +60,7 @@
                     <img src="/assets/img/about-us.png" alt="about us">
                 </div>
                 <blockquote class="about-main">
-                    <h4 class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum officiis nulla cumque? Quo, et.</h4>
+                    <h4 class="sub-heading about-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum officiis nulla cumque? Quo, et.</h4>
                     <div class="about-statement">
                         <figcaption class="about-vision">
                             <h4 class="sub-heading">what we stand for</h4>
@@ -74,23 +78,23 @@
             <h2 class="page-heading">contact us</h2>
             <div class="contact-container">
                 <div class="contact-email-box">
-                    <form action="mailto:gsmsage100@gmail.com" method="post" class="form">
+                    <form action="https://formspree.io/f/xdobvkwo" method="post" class="form">
                         <h4 class="sub-heading form-heading">send us a message</h4>
                         <div class="form-input-area">
                             <fieldset>
                                 <h5 class="form-title">full name</h5>
-                                <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+                                <input type="text" id="name" name="Name" required placeholder="Enter Your Name">
                             </fieldset>
                             <fieldset>
                                 <h5 class="form-title">phone number</h5>
-                                <input type="tel" id="name" name="name" required placeholder="+234 1234567890">
+                                <input type="tel" id="name" name="Number" required placeholder="+234 1234567890">
                             </fieldset>
                             <fieldset>
                                 <h5 class="form-title">email address</h5>
-                                <input type="email" name="email" id="email" required placeholder="example@email.com">
+                                <input type="email" name="Email" id="email" required placeholder="example@email.com">
                             </fieldset>
                             <fieldset>
-                                <textarea placeholder="Type your message here" required name="message" id="message" cols="30" rows="5"></textarea>
+                                <textarea name="Feedback" placeholder="Type your message here" required name="message" id="message" cols="30" rows="5"></textarea>
                             </fieldset>
                             <button type="submit" class="btn submit-btn">send <i class="fa fa-paper-plane"></i></button>
 
@@ -98,7 +102,7 @@
                     </form>
                 </div>
                 <div class="contact-address-box">
-                    <h4 class="sub-heading form-heading">contact information.</h4>
+                    <h4 class="form-heading">contact information.</h4>
                     <div class="contact-address-details">
                         <div class="contact-item">
                             <i class="contact-icon fa fa-location-dot"></i>
@@ -110,29 +114,33 @@
                         </div>
                         <div class="contact-item">
                             <i class="contact-icon fa fa-phone"></i>
-                            <p>+234 701 794 1845</p>
+                            <p class="contact-tel">+234 701 794 1845</p>
                         </div>
                         <div class="contact-item">
                             <i class="contact-icon fa-brands fa-whatsapp"></i>
-                            <a href="https://api.whatsapp.com/send?text=''" target="_blank">+234 701 794 1845</a>
+                            <a class="contact-whatsapp" href="https://api.whatsapp.com/send?text=''" target="_blank">+234 701 794 1845</a>
                         </div>
                         
                     </div>
                 </div>
             </div>
-            <h2 class="secondary-heading">you can also locate us on the map.</h2>
-            <div id="map">
-                <!-- Google Map Embed -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7563502988287!2d6.978655413958618!3d4.811846796505723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cfd7576bb1d9%3A0x11dc798241f48737!2sBacktick%20Technologies!5e0!3m2!1sen!2sus!4v1655600888640!5m2!1sen!2sus" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            
+            <aside>
+                <h2 class="secondary-heading">you can also get directions on the map.</h2>
+                <div id="map">
+                    <!-- Google Map Embed -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7563502988287!2d6.978655413958618!3d4.811846796505723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cfd7576bb1d9%3A0x11dc798241f48737!2sBacktick%20Technologies!5e0!3m2!1sen!2sus!4v1655600888640!5m2!1sen!2sus" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
+            </aside>
         </section>
         
     </main>
     <!-- FOOTER -->
+
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="/assets/TrustMart Logo white.png" alt="footer logo" class="footer__logo">
+            <img src="/assets/img/backtick-logo.svg" alt="footer logo" class="footer__logo">
         </div>
 
         <div class="grid footer-main">
@@ -145,13 +153,12 @@
             <div class="footer-group">
                 <div class="footer-nav">
                     <a href="/index.html" class="footer-nav-link">home</a>
-                    <a href="/products.html" class="footer-nav-link">products</a>
                     <a href="/services.html" class="footer-nav-link">services</a>
                     <a href="/about.html" class="footer-nav-link">about us</a>
                     <a href="#" class="footer-nav-link">Terms of service</a>
                     <a href="#" class="footer-nav-link">privacy policy</a>
                 </div>
-                <p class="paragraph footer-copyright">Copyright &copy; <em class="emphasis">backtick technologies LLC</em> 2022. All rights reserved</p>
+                <p class="paragraph footer-copyright">Copyright &copy; Backtick Technologies LLC 2022. All rights reserved</p>
             </div>
             
         </div>

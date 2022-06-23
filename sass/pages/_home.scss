@@ -31,9 +31,9 @@
 
     &-content {
         width: 85%;
-        background-image: linear-gradient(105deg, 
+        background-image: linear-gradient(100deg, 
                                     rgba($primary, .9) 0%, 
-                                    rgba($primary, .9) 45%, 
+                                    rgba($primary, .9) 50%, 
                                     transparent 45%),
                                     url('/assets/img/white-stripe-bg.jpg');
         background-size: cover;
@@ -42,7 +42,7 @@
         box-shadow: $box-shadow;
         padding: $small-size;
         display: flex;
-        justify-content: baseline;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -51,7 +51,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        padding-right: $big-size;
 
         .sub-heading {margin: 0;}
     }
@@ -62,10 +63,15 @@
         margin-bottom: $tiny-size;
         margin-left: $small-size;
     }
+    
+    &-name {
+        margin: 0 0 $tiny-size 0;
+    }
 
     &-details {
         width: 50%;
         text-align: center;
+        padding-left: $small-size;
         
         .paragraph {
             font-size: 1.5rem;
@@ -73,6 +79,61 @@
             text-align: left;
             color: $black;
         }
+    }
+
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 45em) {
+    .benefits-group {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $small-size;
+        // margin: $medium-size;
+    }   
+
+    .about-section-content {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 26.5em) {
+    .benefits-group {
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+
+    .about-section-content {
+        background-image: linear-gradient(180deg, 
+                                    rgba($primary, .9) 0%, 
+                                    rgba($primary, .9) 50%, 
+                                    transparent 45%),
+                                    url('/assets/img/white-stripe-bg.jpg');
+        background-size: cover;
+        justify-content: center;
+        padding: $small-size;
+        flex-direction: column;
+    }
+
+    .about-section-main {
+        width: 100%;
+        padding: $tiny-size;
+    }
+
+    .about-section-logo {
+        margin: $tiny-size auto;
+    }
+
+    .about-section-name {
+        font-size: 3rem;
+        font-family: 'Ubuntu', sans-serif;
+        color: $white;
+    }
+
+    .about-section-details {
+        width: 100%;
+        margin-top: $medium-size;
     }
 
 }

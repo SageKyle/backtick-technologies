@@ -7,10 +7,10 @@
     <title>Services | BackTick Technologies</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -32,15 +32,18 @@
                 <div class="hero__img"></div>
             </section>
         </div>
-        <nav class="navigation relative-position">
+        <!-- NAV TOGGLE -->
+        <div class="toggle"></div>
+        <!-- NAVIGATION -->
+        <nav class="navigation hidden animate animate-fast animate-left">
+            <div class="close animate delay-1s rotateLeft animate-fast">x</div>
+            <img src="/assets/img/backtick-logo.svg" alt="" class="navigation__logo">
             <a href="/index.html" class="navigation__item">home</a>
-            <a href="/products.html" class="navigation__item">products</a>
             <a href="/services.html" class="navigation__item">services</a>
             <a href="/about.html" class="navigation__item">about</a>
         </nav>
     </header>
     <main id="main" class="main-section">
-        <div class="toggle"></div>
         <section class="services">
             <h2 class="page-heading animate animate-bottom animate-fast">our services</h2>
             <div class="services-group">
@@ -103,7 +106,7 @@
     </main>
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="/assets/TrustMart Logo white.png" alt="footer logo" class="footer__logo">
+            <img src="/assets/img/backtick-logo.svg" alt="footer logo" class="footer__logo">
         </div>
 
         <div class="grid footer-main">
@@ -116,13 +119,12 @@
             <div class="footer-group">
                 <div class="footer-nav">
                     <a href="/index.html" class="footer-nav-link">home</a>
-                    <a href="/products.html" class="footer-nav-link">products</a>
                     <a href="/services.html" class="footer-nav-link">services</a>
                     <a href="/about.html" class="footer-nav-link">about us</a>
                     <a href="#" class="footer-nav-link">Terms of service</a>
                     <a href="#" class="footer-nav-link">privacy policy</a>
                 </div>
-                <p class="paragraph footer-copyright">Copyright &copy; <em class="emphasis">backtick technologies LLC</em> 2022. All rights reserved</p>
+                <p class="paragraph footer-copyright">Copyright &copy; Backtick Technologies LLC 2022. All rights reserved</p>
             </div>
             
         </div>

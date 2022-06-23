@@ -1,30 +1,29 @@
+// UI VARIABLES
 const navigation = document.querySelector('.navigation');
-const benefitsContainer = document.querySelector('.benefits')
-const benefitsCard = document.querySelectorAll('.benefits .col-1-of-4')
-const mainSection = document.querySelector('#main')
+const toggle = document.querySelector('.toggle');
+const navCloseToggle = document.querySelector('.close');
+const benefitsContainer = document.querySelector('.benefits');
+const benefitsCard = document.querySelectorAll('.benefits .col-1-of-4');
 
 
 // MOUSE EVENTS
 
-benefitsContainer.addEventListener('mouseenter', (e) => {
-    // navigation.classList.toggle('border-bottom');
-    // navigation.classList.toggle('position-fixed');
+// ANIMATION TOGGLE
+benefitsContainer.addEventListener('mouseenter', () => {
     benefitsCard.forEach(card => {
         card.classList.toggle('animate-left');
     });
 
-    // POINTER EvENTS
-benefitsContainer.addEventListener('pointerenter', (e) => {
-    benefitsCard.forEach(card => {
-        card.classList.toggle('animate-left');
-    });
 }, { once: true });
 
-}, { once: true });
 
-mainSection.addEventListener('mouseenter', (e) => {
-    navigation.classList.add('border-bottom');
-    navigation.classList.toggle('position-fixed');
-
+// NAVIGATION TOGGLE
+toggle.addEventListener('click', ()=> {
+    navigation.classList.toggle('hidden')
+    toggle.style.visibility = 'hidden'
 });
 
+navCloseToggle.addEventListener('click', ()=> {
+    navigation.classList.toggle('hidden')
+    toggle.style.visibility = 'visible'
+})

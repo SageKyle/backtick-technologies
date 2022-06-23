@@ -1,11 +1,18 @@
 .navigation {
-    background-color: $black;
+    background-color: rgba($black, .6);
     font-size: 2rem;
     font-weight: 400;
     color: $white;
     text-transform: capitalize;
     height: 10%;
     padding: 0 $tiny-size;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    justify-content: flex-end;
+    align-items: center;
     
     &__item {
         padding: 0 calc(#{$tiny-size} / 2); // 1rem
@@ -15,23 +22,65 @@
             color: $tertiary;
         }
     }
-}
 
+    &__logo {
+        height: 60%;
+        width: auto;
+        position: absolute;
+        left: $small-size;
+    }
+
+    .close {display: none;}
+}
+ 
+
+// MEDIA QUEIRES
+@media screen and (max-width: 45em) {
     
-.relative-position {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.toggle {
+    display: inline-block;
+    background-image: url('/assets/img/icon-hamburger.png');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 4rem;
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+    cursor: pointer;
 }
 
-.position-fixed {
-    display: flex;
-    flex-direction: row;
-    padding: $tiny-size $small-size;
-    height: $medium-size;
+.navigation {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: $small-size;
+    width: 30%;
+    height: 100vh;
     top: 0;
-    width: 100%;
+    left: 0;
+    background-color: rgba($black, .5);
     z-index: 500;
+
+    &-link {
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__logo {display: none;}
+
+    .close {
+        display: inline-block;
+        font-size: 3rem;
+        align-self: flex-end;
+        color: currentColor;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+
+.hidden {display: none;}
 }

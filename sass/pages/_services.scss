@@ -7,7 +7,7 @@
 
     &-header {
         background-image: url('/assets/img/a-lady-using-a-smartphone-with-shades-on.jpg');
-        background-size: 100%;
+        background-size: cover;
         background-position-y: 50%;
     }
 
@@ -56,4 +56,35 @@
 
     .btn {margin-bottom: $small-size;}
     
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 45em) {
+    .services-text {
+        width: 95%;
+        
+        &:nth-child(even) {margin-left: 0;}
+    }
+
+    .services-img > img {height: calc(#{$extra-big-size} * 3);}
+    
+}
+
+@media screen and (max-width: 40em) {
+    .section-heading {
+        margin: $small-size 0;
+    }
+
+    .services-item {
+        grid-template-columns: 1fr;
+        row-gap: $small-size;
+        margin: $small-size auto;
+        padding: 0;
+    }
+
+    .services-img {order: 1;}
+
+    .services-img > img {height: calc(#{$extra-big-size} * 4);}
+
 }
