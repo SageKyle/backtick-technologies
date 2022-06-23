@@ -35,7 +35,7 @@
                                     rgba($primary, .9) 0%, 
                                     rgba($primary, .9) 50%, 
                                     transparent 45%),
-                                    url('/assets/img/white-stripe-bg.jpg');
+                                    url('../assets/img/white-stripe-bg.jpg');
         background-size: cover;
         margin: 0 auto;
         border-radius: .5rem;
@@ -109,7 +109,7 @@
                                     rgba($primary, .9) 0%, 
                                     rgba($primary, .9) 50%, 
                                     transparent 45%),
-                                    url('/assets/img/white-stripe-bg.jpg');
+                                    url('../assets/img/white-stripe-bg.jpg');
         background-size: cover;
         justify-content: center;
         padding: $small-size;

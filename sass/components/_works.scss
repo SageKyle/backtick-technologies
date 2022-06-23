@@ -35,24 +35,23 @@
     }
 
     .card-1 {
-        background-image: url('/assets/img/iphone\ 13\ pro\ max.jpg');
-        // background-position: left;
+        background-image: url('../assets/img/iphone\ 13\ pro\ max.jpg');
     }
     .card-2 {
-        background-image: url('/assets/img/holding-android-phone.jpg');
+        background-image: url('../assets/img/holding-android-phone.jpg');
     }
     .card-3 {
-        background-image: url('/assets/img/google-pixel-6.jpg');
+        background-image: url('../assets/img/google-pixel-6.jpg');
     }
     .card-4 {
-        background-image: url('/assets/img/holding-iphone-8.jpg');
+        background-image: url('../assets/img/holding-iphone-8.jpg');
     }
     .card-5 {
-        background-image: url('/assets/img/iphone-11-pro-max.jpg');
+        background-image: url('../assets/img/iphone-11-pro-max.jpg');
     }
 
     .card-6 {
-        background-image: url('/assets/img/transsion-smartphone.jpg');
+        background-image: url('../assets/img/transsion-smartphone.jpg');
     } 
     
     &-card-bg:hover &-card {

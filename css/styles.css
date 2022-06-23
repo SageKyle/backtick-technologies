@@ -378,17 +378,17 @@ span.arrow {
     transform: scale(0.01);
     visibility: hidden; }
   .works .card-1 {
-    background-image: url("/assets/img/iphone 13 pro max.jpg"); }
+    background-image: url("../assets/img/iphone 13 pro max.jpg"); }
   .works .card-2 {
-    background-image: url("/assets/img/holding-android-phone.jpg"); }
+    background-image: url("../assets/img/holding-android-phone.jpg"); }
   .works .card-3 {
-    background-image: url("/assets/img/google-pixel-6.jpg"); }
+    background-image: url("../assets/img/google-pixel-6.jpg"); }
   .works .card-4 {
-    background-image: url("/assets/img/holding-iphone-8.jpg"); }
+    background-image: url("../assets/img/holding-iphone-8.jpg"); }
   .works .card-5 {
-    background-image: url("/assets/img/iphone-11-pro-max.jpg"); }
+    background-image: url("../assets/img/iphone-11-pro-max.jpg"); }
   .works .card-6 {
-    background-image: url("/assets/img/transsion-smartphone.jpg"); }
+    background-image: url("../assets/img/transsion-smartphone.jpg"); }
   .works-card-bg:hover .works-card {
     transform: scale(1);
     visibility: visible; }
@@ -416,7 +416,7 @@ span.arrow {
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url("/assets/img/samsung-s22-ultra.jpg");
+  background-image: url("../assets/img/samsung-s22-ultra.jpg");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position-y: 20%;
@@ -602,7 +602,7 @@ span.arrow {
   color: #131212;
   position: relative; }
   .about-header {
-    background-image: url("/assets/img/using-phone.jpg");
+    background-image: url("../assets/img/using-phone.jpg");
     background-size: cover;
     background-position: bottom; }
   .about .primary-heading {
@@ -790,7 +790,7 @@ span.arrow {
   background-image: linear-gradient(to right bottom, #ffffff, #cac7c7); }
   .about-section-content {
     width: 85%;
-    background-image: linear-gradient(100deg, rgba(51, 102, 153, 0.9) 0%, rgba(51, 102, 153, 0.9) 50%, transparent 45%), url("/assets/img/white-stripe-bg.jpg");
+    background-image: linear-gradient(100deg, rgba(51, 102, 153, 0.9) 0%, rgba(51, 102, 153, 0.9) 50%, transparent 45%), url("../assets/img/white-stripe-bg.jpg");
     background-size: cover;
     margin: 0 auto;
     border-radius: .5rem;
@@ -838,7 +838,7 @@ span.arrow {
     grid-template-columns: 80%;
     justify-content: center; }
   .about-section-content {
-    background-image: linear-gradient(180deg, rgba(51, 102, 153, 0.9) 0%, rgba(51, 102, 153, 0.9) 50%, transparent 45%), url("/assets/img/white-stripe-bg.jpg");
+    background-image: linear-gradient(180deg, rgba(51, 102, 153, 0.9) 0%, rgba(51, 102, 153, 0.9) 50%, transparent 45%), url("../assets/img/white-stripe-bg.jpg");
     background-size: cover;
     justify-content: center;
     padding: 4rem;
@@ -863,7 +863,7 @@ span.arrow {
   text-align: center;
   padding-bottom: 8rem; }
   .services-header {
-    background-image: url("/assets/img/a-lady-using-a-smartphone-with-shades-on.jpg");
+    background-image: url("../assets/img/a-lady-using-a-smartphone-with-shades-on.jpg");
     background-size: cover;
     background-position-y: 50%; }
   .services-group {
