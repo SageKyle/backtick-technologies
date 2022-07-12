@@ -209,6 +209,21 @@ span.arrow {
   text-transform: capitalize;
   font-weight: 600; }
 
+.note {
+  border: 2px solid #d63504;
+  padding: 2rem;
+  margin-top: 4rem;
+  background-color: #cac7c7;
+  color: #131212;
+  font-family: 'Poppins', sans-serif; }
+  .note-heading {
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block; }
+  .note .paragraph {
+    margin-top: 1rem;
+    color: #131212; }
+
 .animate {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -577,7 +592,7 @@ span.arrow {
     justify-content: start;
     align-items: flex-start;
     padding: 4rem;
-    width: 30%;
+    width: 35%;
     height: 100vh;
     top: 0;
     left: 0;
@@ -586,7 +601,7 @@ span.arrow {
     .navigation__item {
       padding-bottom: 2rem;
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-family: 'Ubuntu', sans-serif; }
     .navigation__logo {
       display: none; }
@@ -594,7 +609,9 @@ span.arrow {
       display: inline-block;
       font-size: 3rem;
       align-self: flex-end;
-      color: currentColor;
+      margin-bottom: 4rem;
+      margin-left: auto;
+      color: #336699;
       font-family: 'Ubuntu', sans-serif; }
   .hidden {
     display: none; } }
@@ -826,7 +843,9 @@ span.arrow {
       font-size: 1.5rem;
       margin-bottom: 2rem;
       text-align: left;
-      color: #131212; }
+      color: #131212;
+      font-family: 'Poppins', serif;
+      line-height: 1.5; }
 
 @media screen and (max-width: 45em) {
   .benefits-group {
@@ -834,7 +853,10 @@ span.arrow {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem; }
   .about-section-content {
-    width: 95%; } }
+    width: 95%; }
+    .about-section-content .btn {
+      margin: 0;
+      padding: 0; } }
 
 @media screen and (max-width: 26.5em) {
   .benefits-group {
@@ -900,6 +922,12 @@ span.arrow {
     font-size: 2rem; }
   .services .btn {
     margin-bottom: 4rem; }
+  .services .note {
+    width: 30%;
+    text-align: left; }
+    .services .note-heading {
+      font-size: 3rem;
+      margin-bottom: .5rem; }
 
 @media screen and (max-width: 45em) {
   .services-text {
@@ -907,7 +935,10 @@ span.arrow {
     .services-text:nth-child(even) {
       margin-left: 0; }
   .services-img > img {
-    height: calc(10rem * 3); } }
+    height: calc(10rem * 3); }
+  .services .note {
+    width: 90%;
+    margin-bottom: 6rem; } }
 
 @media screen and (max-width: 40em) {
   .section-heading {

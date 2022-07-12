@@ -98,6 +98,26 @@ span.arrow {
     font-weight: 600;
 }
 
+.note {
+    border: 2px solid $tertiary;
+    padding: $tiny-size;
+    margin-top: $small-size;
+    background-color: $light-grey;
+    color: $black;
+    font-family: 'Poppins', sans-serif;
+
+    &-heading {
+        font-weight: 500;
+        font-size: 2rem;
+        display: inline-block;
+    }
+    
+    .paragraph {    
+        margin-top: 1rem;
+        color: $black;
+    }
+}
+
 // ANIMATIONS
 
 .animate {

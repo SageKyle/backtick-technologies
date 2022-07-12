@@ -78,6 +78,8 @@
             margin-bottom: $tiny-size;
             text-align: left;
             color: $black;
+            font-family: 'Poppins', serif;
+            line-height: 1.5;
         }
     }
 
@@ -90,11 +92,15 @@
         width: 90%;
         grid-template-columns: repeat(2, 1fr);
         gap: $small-size;
-        // margin: $medium-size;
     }   
 
     .about-section-content {
         width: 95%;
+
+        .btn {
+            margin: 0;
+            padding: 0;
+        }
     }
 }
 

@@ -55,6 +55,16 @@
     }
 
     .btn {margin-bottom: $small-size;}
+
+    .note {
+        width: 30%;
+        text-align: left;
+
+        &-heading {
+            font-size: 3rem;
+            margin-bottom: .5rem;
+        }
+    }
     
 }
 
@@ -68,6 +78,11 @@
     }
 
     .services-img > img {height: calc(#{$extra-big-size} * 3);}
+
+    .services .note {
+        width: 90%;
+        margin-bottom: $medium-size;
+    }
     
 }
 
