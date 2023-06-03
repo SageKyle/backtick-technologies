@@ -1,138 +1,166 @@
 // Button
 .btn {
-    width: fit-content;
-    height: $medium-size;
-    font-weight: 400;
-    text-transform: capitalize;
-    padding: calc(#{$tiny-size} / 2) $tiny-size;
-    border-radius: $small-size;
-    text-align: center;
-    font-size: 2rem;
-    border: unset;
-    margin: $small-size;
-    transition: all 300ms;
-    cursor: pointer;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	text-transform: capitalize;
+	padding: calc(#{$tiny-size} / 2) $tiny-size;
+	border-radius: 1rem;
+	text-align: center;
+	font-size: 2rem;
+	border: unset;
+	margin: $small-size;
+	transition: all 300ms;
+	cursor: pointer;
 }
 
 span.arrow {
-    display: inline-block;
-    transition: all 500ms;
+	display: inline-block;
+	transition: all 500ms;
 }
 
 .btn-secondary {
-    color: currentColor;
-    background-color: transparent;
+	color: currentColor;
+	background-color: transparent;
 
-    &:hover span.arrow {transform: translateX(1rem);}
+	&:hover span.arrow {
+		transform: translateX(1rem);
+	}
 }
 
 .btn-primary {
-    background-color: $white;
-    font-size: 3rem;
-    color: $primary;
+	background-color: $white;
+	font-size: 3rem;
+	font-weight: bold;
+	color: $primary;
+	margin-inline: auto;
+	padding: $tiny-size $small-size;
 
-    &:hover {
-        background-color: transparent;
-        color: $white;
-        border: 2px solid $white;
-    }
+	&:hover {
+		background-color: transparent;
+		color: $white;
+		border: 2px solid $white;
+	}
 }
 
 .btn-tertiary {
-    background-color: transparent;
-    border: unset;
-    color: $white;
-    border-radius: calc(#{$tiny-size} / 4);
-    font-size: $tiny-size;
-    padding: calc(#{$tiny-size} / 2);
+	background-color: transparent;
+	border: unset;
+	color: $white;
+	border-radius: calc(#{$tiny-size} / 4);
+	font-size: $tiny-size;
+	padding: calc(#{$tiny-size} / 2);
 
-    &:hover {
-        color: $white;
-        border-bottom-color: $green;
-        background-color: $green;
-    }
+	&:hover {
+		color: $white;
+		border-bottom-color: $green;
+		background-color: $green;
+	}
 
-    &:hover span.arrow {transform: translateX(1rem);}
+	&:hover span.arrow {
+		transform: translateX(1rem);
+	}
 }
 
 // Grid
 .grid {
-    width: 100%;
-    display: grid;
-    gap: $tiny-size;
-    padding: $small-size;
-    margin: $tiny-size auto;
-
+	width: 100%;
+	display: grid;
+	gap: $tiny-size;
+	padding: $small-size;
+	margin: $tiny-size auto;
 }
 
 .col-2 {
-    grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .col-1-of-4 {
-    padding: $tiny-size;
-    border-radius: $tiny-size;
-    box-shadow: 2px 2px 2px $light-grey;
+	padding: $tiny-size;
+	border-radius: $tiny-size;
+	box-shadow: 2px 2px 2px $light-grey;
 }
 
 // Icons
 .icon-box {
-    width: $medium-size;
-    height: $medium-size;
-    margin: $tiny-size auto $small-size auto;
+	width: $medium-size;
+	height: $medium-size;
+	margin: $tiny-size auto $small-size auto;
 }
 
 .icon {
-    display: block;
-    color: $secondary;
-    border-radius: 50%;
-    text-align: center;
-    font-size: $medium-size; 
+	display: block;
+	color: $secondary;
+	border-radius: 50%;
+	text-align: center;
+	font-size: $medium-size;
 }
 
 // Other utilities
-.border-bottom {border-bottom: .5rem solid $primary;}
+.border-bottom {
+	border-bottom: 0.5rem solid $primary;
+}
 
 .emphasis {
-    text-transform: capitalize;
-    font-weight: 600;
+	text-transform: capitalize;
+	font-weight: 600;
 }
 
 .note {
-    border: 2px solid $tertiary;
-    padding: $tiny-size;
-    margin-top: $small-size;
-    background-color: $light-grey;
-    color: $black;
-    font-family: 'Poppins', sans-serif;
+	border: 2px solid $tertiary;
+	padding: $tiny-size;
+	margin-top: $small-size;
+	background-color: $light-grey;
+	color: $black;
+	font-family: 'Poppins', sans-serif;
 
-    &-heading {
-        font-weight: 500;
-        font-size: 2rem;
-        display: inline-block;
-    }
-    
-    .paragraph {    
-        margin-top: 1rem;
-        color: $black;
-    }
+	&-heading {
+		font-weight: 500;
+		font-size: 2rem;
+		display: inline-block;
+	}
+
+	.paragraph {
+		margin-top: 1rem;
+		color: $black;
+	}
 }
 
 // ANIMATIONS
 
 .animate {
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: backwards;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
 }
 
-.animate-fast {animation-duration: 500ms;}
-.animate-left {animation-name: moveInLeft;}
-.animate-right {animation-name: moveInRight;}
-.animate-top {animation-name: moveInTop;}
-.animate-bottom {animation-name: moveInBottom;}
-.rotateLeft {animation-name: rotateLeft;}
+.animate-fast {
+	animation-duration: 500ms;
+}
+.animate-left {
+	animation-name: moveInLeft;
+}
+.animate-right {
+	animation-name: moveInRight;
+}
+.animate-top {
+	animation-name: moveInTop;
+}
+.animate-bottom {
+	animation-name: moveInBottom;
+}
+.rotateLeft {
+	animation-name: rotateLeft;
+}
 
-.delay-1s {animation-delay: 1s;}
-.delay-2s {animation-delay: 2s;}
-.delay-4s {animation-delay: 4s;}
+.delay-1s {
+	animation-delay: 1s;
+}
+.delay-2s {
+	animation-delay: 2s;
+}
+.delay-4s {
+	animation-delay: 4s;
+}

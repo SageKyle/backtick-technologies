@@ -1,232 +1,234 @@
 .about {
-    padding: $small-size;
-    background-color: $very-light-grey;
-    color: $black;
-    position: relative;
+	padding: $small-size;
+	background-color: $very-light-grey;
+	color: $black;
+	position: relative;
 
-    &-header {
-        background-image: url('../assets/img/using-phone.jpg');
-        background-size: cover;
-        background-position: bottom;
-    }
+	&-header {
+		background-image: url('../assets/img/using-phone.jpg');
+		background-size: cover;
+		background-position: bottom;
+	}
 
-    .primary-heading {font-size: 5rem;}
-    
-    .sub-heading {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-    }
+	.primary-heading {
+		font-size: 5rem;
+	}
 
-    &-content {
-        display: flex;
-    }
+	.sub-heading {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+	}
 
-    &-img {
-        flex: 0 1 50%;
-    
-        > img {
-            width: 100%;
-        }
-    }
+	&-content {
+		display: flex;
+	}
 
-    &-main {
-        display: flex;
-        flex-direction: column;
-        margin: $small-size;
-        justify-content: space-between;
-        flex: 1;
-    }
+	&-img {
+		flex: 0 1 50%;
 
-    &-statement {
-        display: flex;
-        font-size: 1.6rem;
-        margin-top: auto;
-        align-self: flex-start;
-        
-    @media screen and (max-width: 55em) {
-        flex-direction: column;
-    }
-    }
+		> img {
+			width: 100%;
+		}
+	}
 
-    &-mission {margin-left: $tiny-size;}
+	&-main {
+		display: flex;
+		flex-direction: column;
+		margin: $small-size;
+		justify-content: space-between;
+		flex: 1;
+	}
 
-    
-    @media screen and (max-width: 59.5em) {
-        padding-right: 0;
+	&-statement {
+		display: flex;
+		font-size: 1.6rem;
+		margin-top: auto;
+		align-self: flex-start;
 
-        &-mission {margin: 0;}
-    }
-    
-    
-    @media screen and (max-width: 40em) {
-        padding: $small-size;
+		@media screen and (max-width: 55em) {
+			flex-direction: column;
+		}
+	}
 
-        .about-content {
-            flex-direction: column;
-            position: relative;
-        }
-        
-        .about-img {
-            margin-top: $medium-size;
-        }
+	&-mission {
+		margin-left: $tiny-size;
+	}
 
-        .about-intro {
-            position: absolute;
-            top: 0;
-            width: 80%;
-        }
-    }
+	@media screen and (max-width: 59.5em) {
+		padding-right: 0;
+
+		&-mission {
+			margin: 0;
+		}
+	}
+
+	@media screen and (max-width: 40em) {
+		padding: $small-size;
+
+		.about-content {
+			flex-direction: column;
+			position: relative;
+		}
+
+		.about-img {
+			margin-top: $medium-size;
+		}
+
+		.about-intro {
+			position: absolute;
+			top: 0;
+			width: 80%;
+		}
+	}
 }
 
 // CONTACT SECTION
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: $medium-size;    
-    background-color: $very-light-grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: $medium-size;
+	background-color: $very-light-grey;
 
-    &-container {
-        width: 80%;
-        margin: $small-size auto;
-        border-radius: .5rem;
-        box-shadow: $box-shadow;
-        padding: $small-size;
-        margin-bottom: $big-size;
-        display: flex;
-    }
+	&-container {
+		width: 80%;
+		margin: $small-size auto;
+		border-radius: 0.5rem;
+		box-shadow: $box-shadow;
+		padding: $small-size;
+		margin-bottom: $big-size;
+		display: flex;
+	}
 
-    &-email-box {width: 60%;}
+	&-email-box {
+		width: 60%;
+	}
 
-    &-address-box {
-        align-self: stretch;
-        padding-left: $small-size;
-        font-size: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        margin: $small-size 0;
-        justify-content: space-evenly;
-    }
+	&-address-box {
+		align-self: stretch;
+		padding-left: $small-size;
+		font-size: 1.6rem;
+		display: flex;
+		flex-direction: column;
+		margin: $small-size 0;
+		justify-content: space-evenly;
+	}
 
-    &-address-details {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        text-transform: capitalize;
-    }
+	&-address-details {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		text-transform: capitalize;
+	}
 
-    &-item {
-        display: flex;
-        margin-bottom: 1.5rem;
-        align-items: center;
-    }
+	&-item {
+		display: flex;
+		margin-bottom: 1.5rem;
+		align-items: center;
+	}
 
-    &-icon {
-        font-size: 1.6rem;
-        margin-right: $tiny-size;
-        color: $primary;
-    } 
+	&-icon {
+		font-size: 1.6rem;
+		margin-right: $tiny-size;
+		color: $primary;
+	}
 }
 
 .form {
+	&-input-area {
+		margin: $tiny-size auto;
+		border-right: 2px solid rgba($primary, 0.15);
+	}
 
-    &-input-area {
-        margin: $tiny-size auto;
-        border-right: 2px solid rgba($primary, .15);
-    }
+	&-heading {
+		color: $primary;
+		text-transform: uppercase;
+		font-size: 2.5rem;
+		margin-bottom: $tiny-size;
+		text-align: left;
+	}
 
-    &-heading {
-        color: $primary;
-        text-transform: uppercase;
-        font-size: 2.5rem;
-        margin-bottom: $tiny-size;
-        text-align: left;
+	&-title {
+		text-transform: capitalize;
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
 
-    }
+	fieldset {
+		border: unset;
+		margin-bottom: $tiny-size;
+	}
 
-    &-title {
-        text-transform: capitalize;
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-    
-    fieldset {
-        border: unset;
-        margin-bottom: $tiny-size;
-    }
-    
-    input,
-    textarea {
-        width: 80%;
-        outline: unset;
-        border: unset;
-        padding: .5rem;
-        background-color: rgba($black, .05);
-        border-radius: .25rem;
-        border-bottom: 2px solid rgba($black, .6);
-        
-        &:focus,
-        &:active {border-bottom-color: $primary;}
-    }
+	input,
+	textarea {
+		width: 80%;
+		outline: unset;
+		border: unset;
+		padding: 0.5rem;
+		background-color: rgba($black, 0.05);
+		border-radius: 0.25rem;
+		border-bottom: 2px solid rgba($black, 0.6);
 
-    .submit-btn {
-        height: fit-content;
-        padding: .5rem 1rem;
-        font-size: 1.6rem;
-        color: $white;
-        margin: 1rem 0 0 $small-size;
-        background-color: rgba($primary, .9);
-        border: 2px solid $primary;
+		&:focus,
+		&:active {
+			border-bottom-color: $primary;
+		}
+	}
 
-        &:hover {
-            color: $black;
-            background-color: transparent;
-        }
-    }
+	.submit-btn {
+		width: 40%;
+		font-size: 1.6rem;
+		color: $white;
+		margin: 1rem 0 0 $small-size;
+		background-color: rgba($primary, 0.9);
+		border: 2px solid $primary;
 
+		&:hover {
+			color: $black;
+			background-color: transparent;
+		}
+	}
 }
 
 #map {
-    display: flex;
-    justify-content: center;
-    width: 100% !important;
-    margin: 0;
-    margin-bottom: $extra-big-size;
-    position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100% !important;
+	margin: 0;
+	margin-bottom: $extra-big-size;
+	position: relative;
 }
 
-   
 @media screen and (max-width: 60em) {
-    .contact {
-        padding: 0;
-    }
-    
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: $tiny-size $medium-size;
+	.contact {
+		padding: 0;
+	}
 
-    }
+	.contact-container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: $tiny-size $medium-size;
+	}
 
-    .contact-email-box {
-        width: 100%;
-    }
+	.contact-email-box {
+		width: 100%;
+	}
 
-    .form-input-area {
-        border: unset;
-    }
+	.form-input-area {
+		border: unset;
+	}
 }
 
 @media screen and (max-width: 22em) {
-    .contact-container {
-        width: 90%;
-    }
+	.contact-container {
+		width: 90%;
+	}
 
-    .contact-address-box {
-        padding: 0;
-    }
+	.contact-address-box {
+		padding: 0;
+	}
 }
