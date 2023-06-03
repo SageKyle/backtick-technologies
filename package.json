@@ -1,21 +1,21 @@
 {
-  "name": "backtick",
-  "version": "1.0.0",
-  "description": "ecommerce website",
-  "main": "index.js",
-  "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
-  },
-  "keywords": [
-    "ecommerce",
-    "css animations",
-    "javascript"
-  ],
-  "author": "Ominyi Paul",
-  "license": "ISC",
-  "dependencies": {
-    "node-sass": "^7.0.1",
-    "nodesass": "^0.0.2-security",
-    "normalize.css": "^8.0.1"
-  }
+	"name": "backtick",
+	"version": "1.0.0",
+	"description": "ecommerce website",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "sass sass/main.scss css/styles.css -w"
+	},
+	"keywords": [
+		"ecommerce",
+		"css animations",
+		"javascript"
+	],
+	"author": "Ominyi Paul",
+	"license": "ISC",
+	"dependencies": {
+		"nodesass": "^0.0.2-security",
+		"normalize.css": "^8.0.1",
+		"sass": "^1.62.1"
+	}
 }
