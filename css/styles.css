@@ -197,11 +197,12 @@ span.arrow {
   color: #336699;
   margin-inline: auto;
   padding: 2rem 4rem;
+  border: 2px solid transparent;
 }
 .btn-primary:hover {
   background-color: transparent;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border-color: #ffffff;
 }
 
 .btn-tertiary {
@@ -336,8 +337,8 @@ span.arrow {
   color: #131212;
 }
 .features-group {
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-content: center;
   align-items: center;
 }
 .features .card {
@@ -454,7 +455,7 @@ span.arrow {
   text-align: center;
 }
 .works-group {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-auto-rows: 40rem 40rem;
   align-items: start;
   justify-content: center;
@@ -536,7 +537,7 @@ span.arrow {
   background-image: url("../assets/img/samsung-s22-ultra.jpg");
   background-repeat: no-repeat;
   background-size: 60%;
-  background-position-y: 20%;
+  background-position-y: 50%;
   background-position-x: center;
   position: relative;
 }
@@ -556,7 +557,7 @@ span.arrow {
 
 .hero {
   height: 100%;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -700,9 +701,6 @@ span.arrow {
 }
 
 @media screen and (max-width: 45em) {
-  .header {
-    height: 60vh;
-  }
   .toggle {
     display: inline-block;
     background-image: url("/assets/img/icon-hamburger.png");

@@ -1,63 +1,67 @@
 .features {
-    background-color: $light-grey;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: $small-size;
-    text-align: center;
-    position: relative;
+	background-color: $light-grey;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: $small-size;
+	text-align: center;
+	position: relative;
 
-    &-paragraph {
-        margin-bottom: $small-size;
-        margin-top: 0;
-        color: $black;
-    }
+	&-paragraph {
+		margin-bottom: $small-size;
+		margin-top: 0;
+		color: $black;
+	}
 
-    &-group {
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-around;
-        align-items: center;
-    }
+	&-group {
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		justify-content: center;
+		align-items: center;
+	}
 
-    .card {
-        height: 30rem;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        color: currentColor;
-        background-color: $primary;
-        border-radius: $small-border-radius;
-        box-shadow: $box-shadow;
+	.card {
+		height: 30rem;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		color: currentColor;
+		background-color: $primary;
+		border-radius: $small-border-radius;
+		box-shadow: $box-shadow;
 
-        .icon {color: $white}
+		.icon {
+			color: $white;
+		}
 
-        &-heading {
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 500;
-            text-transform: capitalize;
-            color: $white;
-        }
+		&-heading {
+			font-family: 'Ubuntu', sans-serif;
+			font-size: 2.5rem;
+			font-weight: 500;
+			text-transform: capitalize;
+			color: $white;
+		}
 
-        &-paragraph {
-            font-size: 1.5rem;
-            margin-top: calc(#{$tiny-size} / 2);
-            padding: $tiny-size;
-            color: $white;
-        }
-    }
+		&-paragraph {
+			font-size: 1.5rem;
+			margin-top: calc(#{$tiny-size} / 2);
+			padding: $tiny-size;
+			color: $white;
+		}
+	}
 }
 
 // MEDIA QUERIES
 
 @media screen and (max-width: 45em) {
-    .features-group {
-        grid-template-columns: repeat(2, 1fr);
-        gap: $medium-size;
-        justify-content: space-around;
-    }
+	.features-group {
+		grid-template-columns: repeat(2, 1fr);
+		gap: $medium-size;
+		justify-content: space-around;
+	}
 }
 
 @media screen and (max-width: 26.5em) {
-    .features-group {grid-template-columns: 80%;}
+	.features-group {
+		grid-template-columns: 80%;
+	}
 }

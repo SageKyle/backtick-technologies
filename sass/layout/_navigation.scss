@@ -1,93 +1,97 @@
 .navigation {
-    background-color: rgba($black, .8);
-    font-size: 2rem;
-    font-weight: 400;
-    color: $white;
-    text-transform: capitalize;
-    height: 10%;
-    padding: 0 $tiny-size;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    justify-content: flex-end;
-    align-items: center;
-    
-    &__item {
-        padding: 0 calc(#{$tiny-size} / 2); // 1rem
+	background-color: rgba($black, 0.8);
+	font-size: 2rem;
+	font-weight: 400;
+	color: $white;
+	text-transform: capitalize;
+	height: 10%;
+	padding: 0 $tiny-size;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	justify-content: flex-end;
+	align-items: center;
 
-        &:hover,
-        &:active {
-            color: $tertiary;
-        }
-    }
+	&__item {
+		padding: 0 calc(#{$tiny-size} / 2); // 1rem
 
-    &__logo {
-        height: 60%;
-        width: auto;
-        position: absolute;
-        left: $small-size;
-    }
+		&:hover,
+		&:active {
+			color: $tertiary;
+		}
+	}
 
-    .close {display: none;}
+	&__logo {
+		height: 60%;
+		width: auto;
+		position: absolute;
+		left: $small-size;
+	}
+
+	.close {
+		display: none;
+	}
 }
- 
 
 // MEDIA QUEIRES
 @media screen and (max-width: 45em) {
+	// .header {
+	//     height: 60vh;
+	// }
 
-    .header {
-        height: 60vh;
-    }
-    
-.toggle {
-    display: inline-block;
-    background-image: url('/assets/img/icon-hamburger.png');
-    background-size: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: $medium-size;
-    height: $medium-size;
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-    cursor: pointer;
-}
+	.toggle {
+		display: inline-block;
+		background-image: url('/assets/img/icon-hamburger.png');
+		background-size: 80%;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: $medium-size;
+		height: $medium-size;
+		position: absolute;
+		top: 4rem;
+		left: 4rem;
+		cursor: pointer;
+	}
 
-.navigation {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    padding: $small-size;
-    width: 35%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba($black, .5);
-    z-index: 500;
+	.navigation {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: flex-start;
+		padding: $small-size;
+		width: 35%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		background-color: rgba($black, 0.5);
+		z-index: 500;
 
-    &__item {
-        padding-bottom: $tiny-size;
-        text-align: center;
-        font-size: 3rem;
-        font-family: 'Ubuntu', sans-serif;
-    }
+		&__item {
+			padding-bottom: $tiny-size;
+			text-align: center;
+			font-size: 3rem;
+			font-family: 'Ubuntu', sans-serif;
+		}
 
-    &__logo {display: none;}
+		&__logo {
+			display: none;
+		}
 
-    .close {
-        display: inline-block;
-        font-size: 3rem;
-        align-self: flex-end;
-        margin-bottom: $small-size;
-        margin-left: auto;
-        color: $primary;
-        font-family: 'Ubuntu', sans-serif;
-    }
-}
+		.close {
+			display: inline-block;
+			font-size: 3rem;
+			align-self: flex-end;
+			margin-bottom: $small-size;
+			margin-left: auto;
+			color: $primary;
+			font-family: 'Ubuntu', sans-serif;
+		}
+	}
 
-.hidden {display: none;}
+	.hidden {
+		display: none;
+	}
 }

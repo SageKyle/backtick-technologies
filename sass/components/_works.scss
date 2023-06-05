@@ -1,94 +1,92 @@
 .works {
-    background-color: $white;
-    padding: $small-size;
-    text-align: center;
+	background-color: $white;
+	padding: $small-size;
+	text-align: center;
 
-    &-group {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 40rem 40rem;
-        align-items: start;
-        justify-content: center;
-        column-gap: 0;
-        row-gap: 0;
-        position: relative;
-    }
+	&-group {
+		grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+		grid-auto-rows: 40rem 40rem;
+		align-items: start;
+		justify-content: center;
+		column-gap: 0;
+		row-gap: 0;
+		position: relative;
+	}
 
-    &-card-bg {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-    }
+	&-card-bg {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+	}
 
-    &-card {
-        width: 100%;
-        height: 100%;
-        background-color: rgba($black, .8);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all 500ms;
-        transform: scale(.01);
-        visibility: hidden;
-    }
+	&-card {
+		width: 100%;
+		height: 100%;
+		background-color: rgba($black, 0.8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 500ms;
+		transform: scale(0.01);
+		visibility: hidden;
+	}
 
-    .card-1 {
-        background-image: url('../assets/img/iphone\ 13\ pro\ max.jpg');
-    }
-    .card-2 {
-        background-image: url('../assets/img/holding-android-phone.jpg');
-    }
-    .card-3 {
-        background-image: url('../assets/img/google-pixel-6.jpg');
-    }
-    .card-4 {
-        background-image: url('../assets/img/holding-iphone-8.jpg');
-    }
-    .card-5 {
-        background-image: url('../assets/img/iphone-11-pro-max.jpg');
-    }
+	.card-1 {
+		background-image: url('../assets/img/iphone\ 13\ pro\ max.jpg');
+	}
+	.card-2 {
+		background-image: url('../assets/img/holding-android-phone.jpg');
+	}
+	.card-3 {
+		background-image: url('../assets/img/google-pixel-6.jpg');
+	}
+	.card-4 {
+		background-image: url('../assets/img/holding-iphone-8.jpg');
+	}
+	.card-5 {
+		background-image: url('../assets/img/iphone-11-pro-max.jpg');
+	}
 
-    .card-6 {
-        background-image: url('../assets/img/transsion-smartphone.jpg');
-    } 
-    
-    &-card-bg:hover &-card {
-        transform: scale(1);
-        visibility: visible;
-    }
-    
+	.card-6 {
+		background-image: url('../assets/img/transsion-smartphone.jpg');
+	}
 
-    &-details {
-        font-size: 1.6rem;
-        width: 80%;
-        color: $white;
-        font-family: 'Ubuntu', sans-serif;
-        line-height: 1.2;
-    }
+	&-card-bg:hover &-card {
+		transform: scale(1);
+		visibility: visible;
+	}
+
+	&-details {
+		font-size: 1.6rem;
+		width: 80%;
+		color: $white;
+		font-family: 'Ubuntu', sans-serif;
+		line-height: 1.2;
+	}
 }
 
 // MEDIA QUERIES
 @media screen and (max-width: 45em) {
-    .works-group {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+	.works-group {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media screen and (max-width: 37.5em) {
-    .works-group {
-        padding: $tiny-size;
-    }
+	.works-group {
+		padding: $tiny-size;
+	}
 }
 
 @media screen and (max-width: 26.5em) {
-    .works-group {
-        grid-template-columns: 1fr;
-    }
+	.works-group {
+		grid-template-columns: 1fr;
+	}
 
-    .works-card-bg {
-        background-size: contain;
-    }
+	.works-card-bg {
+		background-size: contain;
+	}
 }
